@@ -1,0 +1,146 @@
+{
+	"AlabugaID": "000028306",
+	"UserGUID": "17847c43-cc01-42a6-b761-e10fd435a922",
+	"Организация": "АО \"ОЭЗ ППТ \"Алабуга\"",
+	"FullName": "Олегов Олег Олегович",
+	"TaskList": {
+		"Month": [
+			{
+				"SMARTTask": "ДИ",
+				"BaseTaskName": "Должностные инструкции",
+				"BaseTaskWeight": 100,
+				"TastName": "Должностные инструкции",
+				"TaskWeight": 100,
+				"Approved": true,
+				"Done": true,
+				"Verified": true
+			},
+			{
+				"SMARTTask": "MБO",
+				"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+				"BaseTaskWeight": 100,
+				"TastName": "Разработана система КИС проекта ЛК",
+				"TaskWeight": 100,
+				"Approved": true,
+				"Done": true,
+				"Verified": false
+			},
+			{
+				"SMARTTask": "MБO",
+				"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+				"BaseTaskWeight": 100,
+				"TastName": "1231",
+				"TaskWeight": 100,
+				"Approved": true,
+				"Done": false,
+				"Verified": false
+			},
+			{
+				"SMARTTask": "MБO",
+				"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+				"BaseTaskWeight": 100,
+				"TastName": "Разработана система КИС проекта ЛКДС1231",
+				"TaskWeight": 100,
+				"Approved": false,
+				"Done": false,
+				"Verified": false
+			},
+			{
+				"SMARTTask": "MБO",
+				"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+				"BaseTaskWeight": 100,
+				"TastName": "Разработана система КИС проекта ЛКДС",
+				"TaskWeight": 100,
+				"Approved": false,
+				"Done": false,
+				"Verified": false
+			}
+		],
+	"Quarter": []
+	},
+	"ClosingDate": "false",
+	"ReportingDate": "25.04.2025",
+	"Penalties": [
+			{
+				"Periodicity": "Месяц",
+				"Group": "МБО",
+				"Percent": 10,
+				"Date": "14.04.2025",
+				"Basis": "Тестовое основание штрфа: \"Тестовое краткое содержание штрафа\""
+			},
+			{
+				"Periodicity": "Месяц",
+				"Group": "ДИ",
+				"Percent": 25,
+				"Date": "14.04.2025",
+				"Basis": "Тестовое основание штрфа: \"Тестовое краткое содержание штрафа\""
+			}
+		],
+	"Subordinates": [
+       		 {
+         	   "StructureName": "17847c43-cc01-42a6-b761-e10fd435a922",
+        	    "StructureUsername": "Олегов Олег Олегович",
+         	  "AlabugaID": "000028306"
+       		 },
+		{
+			"StructureName": "17847c43-cc01-42a6-b761-e10fd435a922",
+			"StructureUsername": "Игорев Игорь Григорьевич",
+			"AlabugaID": "000020255",
+			"TaskList": {
+				"Month": [
+						{
+							"SMARTTask": "MБO",
+							"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+							"BaseTaskWeight": 100,
+							"TastName": "Разработана система КИС проекта ЛК",
+							"TaskWeight": 100,
+							"Approved": true,
+							"Done": true,
+							"Verified": true
+						},
+						{
+							"SMARTTask": "MБO",
+							"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+							"BaseTaskWeight": 100,
+							"TastName": "1231",
+							"TaskWeight": 100,
+							"Approved": true,
+							"Done": true,
+							"Verified": false
+						},
+						{
+							"SMARTTask": "MБO",
+							"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+							"BaseTaskWeight": 100,
+							"TastName": "Разработана система КИС проекта ЛКДС1231",
+							"TaskWeight": 100,
+							"Approved": false,
+							"Done": false,
+							"Verified": false
+						},
+						{
+							"SMARTTask": "MБO",
+							"BaseTaskName": "Разработана система КИС проекта ЛКДС",
+							"BaseTaskWeight": 100,
+							"TastName": "Разработана система КИС проекта ЛКДС",
+							"TaskWeight": 100,
+							"Approved": false,
+							"Done": false,
+							"Verified": false
+						}
+					]
+
+				}
+			},
+ 	
+        {
+            "StructureName": "d008a960-7c40-4fcf-96f5-316da5096026",
+            "StructureUsername": "Глушков Илья Максимович",
+            "AlabugaID": "000024464",
+            "TaskList": {
+                "Month": [],
+                "Quarter": []
+            }
+		}
+	]
+}

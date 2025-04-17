@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 244px;
+    height: 261px;
+    background-color: #BDD7EE;
+    border: 1px solid #000000;
+    font-family: "Inter"
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.date {
+    margin-top: 6px;
+    background-color: #7FB1DD;
+    width: 222px;
+    height: 47px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.kpi {
+    background-color: #7FB1DD;
+    width: 222px;
+    height: 96px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.kpi__annotation {
+    margin-top: 20px;
+    margin-left: 5px;
+    
+}
+
+.kpi__MBO {
+    margin: 13px 0 15px 0;
+}
+
+.kpi__data {
+    margin: 5px 0px 30px 60px;
+    text-align: center;
+}
+
+.kpi__MBO_num {
+    margin: 15px 0 15px 0;
+}
+
+.kpi__status {
+    font-size: 10px;
+}
+
+.fines {
+    background-color: #7FB1DD;
+    width: 222px;
+    height: 84px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.fines__annotation {
+    margin-left: 5px;
+    display: grid;
+}
+
+.fines__data {
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.fines__MBO_num {
+    margin: 16px 0 12px 0;
+}
