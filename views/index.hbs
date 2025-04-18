@@ -10,10 +10,10 @@
   <title>KPI</title>
 </head>
 <body>
-  <div class="container">
-    <div class="wrapper">
+  <div class="kpi_card__container">
+    <div class="kpi_card__wrapper">
       <div class="date">
-        До закрытия внесения целей осталось {{day_int}} {{day_string}}!
+        До закрытия внесения целей осталось {{ day_int }} {{ day_string }}!
       </div>
       <div class="kpi">
         <div class="kpi__annotation">
@@ -25,28 +25,65 @@
             Внесено/Закрыто
           </p>
           <p class="kpi__MBO_num">
-            {{MBO_approved}}/{{MBO_done}}
+            {{ MBO_approved }}/{{ MBO_done }}
           </p>
           <p class="kpi__DI_num">
-            {{DI_approved}}/{{DI_done}}
+            {{ DI_approved }}/{{ DI_done }}
           </p>
         </div>
       </div>
       <div class="fines">
         <div class="fines__annotation">
-          <p class="fines__fineses">Штрафы</p>
+          <p class="fines__fines">Штрафы</p>
           <p class="fines__MBO">MBO</p>
           <p class="fines_DI">ДИ</p>
         </div>
         <div class="fines__data">
           <p class="fines__MBO_num">
-            {{MBO_fines}}%
+            {{ MBO_fines }}%
           </p>
           <p class="fines__DI_num">
-            {{DI_fines}}%
+            {{ DI_fines }}%
           </p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="DO__container">
+    <div class="DO__wrapper">
+      <p class="DO__annotation">Задач в ДО:</p>
+      {{#each organizations }}
+        <div class="DO__organization">
+          <button popovertarget="DO__organization_popover{{ this.id }}" class="popover_btn">{{ this.name }}: {{ this.count_tasks }}</button>
+          <div id="DO__organization_popover{{ this.id }}" class="DO__organization_popover" popover>
+            <p class="DO__organization_name">Организация {{ this.name }}</p>
+            <table class="DO__table" border="2">
+              <thead>
+                <tr>
+                  <th class="DO__th">Статус документа</th>
+                  <th class="DO__th">Вид документа</th>
+                  <th class="DO__th">Наименование задачи</th>
+                  <th class="DO__th">Автор задачи</th>
+                  <th class="DO__th">Срок исполнения</th>
+                  <th class="DO__th">Ссылка на веб</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each this.tasks }}
+                  <tr>
+                    <td class="DO__td">{{ this.TaskType }}</td>
+                    <td class="DO__td">{{ this.DocumentType }}</td>
+                    <td class="DO__td">{{ this.TaskName }}</td>
+                    <td class="DO__td">{{ this.Author }}</td>
+                    <td class="DO__td">{{ this.Deadline }}</td>
+                    <td class="DO__td">{{ this.TaskLink }}</td>
+                  </tr>
+                {{/each }}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      {{/each }}
     </div>
   </div>
 </body>

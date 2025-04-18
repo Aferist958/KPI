@@ -1,18 +1,39 @@
+:root {
+    --kpi-container-width: 240px;
+    --kpi-container-height: 265px;
+    --kpi-card-line-weight: 220px;
+    --kpi-card-date-height: 45px;
+    --kpi-card-kpi-height: 95px;
+    --kpi-card-fines-height: 85px;
+    --DO-organization-popover-weight: 495px;
+    --DO-organization-popover-height: 250px;
+}
+
+.popover_btn {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.container {
-    width: 244px;
-    height: 261px;
-    background-color: #BDD7EE;
-    border: 1px solid #000000;
     font-family: "Inter"
 }
 
-.wrapper {
+.kpi_card__container {
+    width: var(--kpi-container-width);
+    height: var(--kpi-container-height);
+    background-color: #BDD7EE;
+    border: 1px solid #000000;
+}
+
+.kpi_card__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,8 +44,8 @@
 .date {
     margin-top: 6px;
     background-color: #7FB1DD;
-    width: 222px;
-    height: 47px;
+    width: var(--kpi-card-line-weight);
+    height: var(--kpi-card-date-height);
     font-size: 14px;
     font-weight: 700;
     text-align: center;
@@ -35,8 +56,8 @@
 
 .kpi {
     background-color: #7FB1DD;
-    width: 222px;
-    height: 96px;
+    width: var(--kpi-card-line-weight);
+    height: var(--kpi-card-kpi-height);
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -67,8 +88,8 @@
 
 .fines {
     background-color: #7FB1DD;
-    width: 222px;
-    height: 84px;
+    width: var(--kpi-card-line-weight);
+    height: var(--kpi-card-fines-height);
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -87,4 +108,42 @@
 
 .fines__MBO_num {
     margin: 16px 0 12px 0;
+}
+
+.DO__annotation {
+    font-weight: 700;
+}
+
+.DO__organization {
+    display: flex;
+}
+
+.DO__table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+  
+.DO__organization_popover {
+    background-color: #D9D9D9;
+    color: #000000;
+    font-weight: 400;
+    padding: 1rem;
+    width: var(--DO-organization-popover-weight);
+    height: var(--DO-organization-popover-height);
+    line-height: 1.4;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: solid 0;
+}
+
+.DO__th, .DO__td {
+    padding: 5px; 
+    border: 2px solid #000000;
+}
+
+.DO__organization_name {
+    margin: 36px 0 13px 45px;
 }

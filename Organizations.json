@@ -1,0 +1,40 @@
+{
+    "AlabugaID": "123456",
+    "DomainName": "user@example.com",
+    "Organizations": [
+      {
+        "OrganizationName": "Организация 1",
+        "Tasks": [
+          {
+            "TaskType": "Тип задачи 1",
+            "DocumentType": "Вид документа 1",
+            "TaskName": "Наименование задачи 1",
+            "Author": "Автор задачи 1",
+            "Deadline": "2025-04-01T12:00:00",
+            "TaskLink": "http://example.com/task/1"
+          },
+          {
+            "TaskType": "Тип задачи 2",
+            "DocumentType": "Вид документа 2",
+            "TaskName": "Наименование задачи 2",
+            "Author": "Автор задачи 2",
+            "Deadline": "2025-04-02T12:00:00",
+            "TaskLink": "http://example.com/task/2"
+          }
+        ]
+      },
+      {
+        "OrganizationName": "Организация 2",
+        "Tasks": [
+          {
+            "TaskType": "Тип задачи 3",
+            "DocumentType": "Вид документа 3",
+            "TaskName": "Наименование задачи 3",
+            "Author": "Автор задачи 3",
+            "Deadline": "2025-04-03T12:00:00",
+            "TaskLink": "http://example.com/task/3"
+          }
+        ]
+      }
+    ]
+  }
